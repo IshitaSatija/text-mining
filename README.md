@@ -57,21 +57,6 @@ cd FIRE
   ```bash
   pip install -r spert_requirements.txt
   ```
-  - For PL-MARKER:
-  ```bash
-  pip install -r pl_marker_requirements.txt
-  pip install --editable ./transformers
-  ```
-  - For REBEL:
-  ```bash
-  pip install -r rebel_requirements.txt
-  ```
-   You might face a bug when loading the REBEL model to evaluate on test set due to versioning conflicts. See this issue https://github.com/Babelscape/rebel/issues/55. The quick fix proposed from the author is to comment out the line in the pytorch_lighting source code: File "python3.8/site-packages/pytorch_lightning/core/saving.py", line 157, in load_from_checkpoint checkpoint[cls.CHECKPOINT_HYPER_PARAMS_KEY].update(kwargs)
-## Reproducing Results
-
-You can reproduce the results from our paper by running the the `main.py` file with the preset model configuration. A logging directory is then created under the `log` directory. Once training for all iterations is finished, the results are logged in a `mean_std_f1.csv` file.
-
-For SpERT
 ```bash
 python main.py --mode train --model spert
 ```
