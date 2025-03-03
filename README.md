@@ -49,7 +49,7 @@ To set up your Python environment to run the baselines, follow these steps:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/hmhamad/FIRE.git
+git clone https://github.com/IshitaSatija/text-mining
 cd FIRE
 ```
 2. Install the required packages for the model you want to run:
