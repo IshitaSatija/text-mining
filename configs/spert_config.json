@@ -1,5 +1,5 @@
 {
-    "n_random_iter": 5,
+    "n_random_iter": 1,
     "seed": 1234,
     "device_id": 0,
     "epochs": 20,
