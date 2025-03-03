@@ -75,19 +75,10 @@ For SpERT
 ```bash
 python main.py --mode train --model spert
 ```
-For PL-MARKER
-```bash
-python main.py --mode train --model pl_marker
-```
-For Rebel,
-```bash
-python main.py --mode train --model rebel
-```
 
-Each model has a configuration file under the 'configs' directory. You can set gpu_id, adjust hyper-parameters or change training configuration to run a different experiment. To reproduce the results in the paper using the FinBERT model, replace the `model_path` field with `ProsusAI/finbert` in the PL-Marker configuration file or replace the `model_path` and `tokenizer_path` fields with `ProsusAI/finbert` in the SpERT configuration file. This experiment does not apply to the REBEL model.
-## Citing Our Work
-
-If you use the FIRE Dataset in your research, please cite our paper:
+Each model has a configuration file under the 'configs' directory. You can set gpu_id, adjust hyper-parameters or change training configuration to run a different experiment. To reproduce the results in the paper using the FinBERT model, replace the `model_path` and `tokenizer_path` fields with `ProsusAI/finbert` in the SpERT configuration file. 
+## Citation
+1. 
 
 ```bibtex
 @article{Hassan2023fire,
