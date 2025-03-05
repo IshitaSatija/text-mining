@@ -50,7 +50,7 @@ To set up your Python environment to run the baselines, follow these steps:
 3. Open the Spert_training.ipynb file. 
 4. Run the code in the cells.
 
-##OR
+## OR
 
 1. Clone the repository:
 ```bash
@@ -70,7 +70,8 @@ python main.py --mode train --model spert
 
 Run the code in the Spert_training.ipynb file which already has all the above commands present.
 
-Each model has a configuration file under the 'configs' directory.
+## BERT Configuration
+Configuration file under the 'configs' directory names spert_config.json
 
 
 ## Results 
