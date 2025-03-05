@@ -8,10 +8,8 @@ The FIRE Dataset is a dataset of named entities and relations in the financial d
 
 FIRE features 13 types of entities and 18 types of relations and can be used to train and evaluate machine learning models in the task of financial joint named entity recognition and relation extraction.
 
-Here is an example instance from the dataset and how it is represented in json format:
-<p align="center">
-  <img src="fire_example.png"/>
-</p>
+Example-
+
 
 ```json
 {
@@ -61,7 +59,17 @@ cd FIRE
 python main.py --mode train --model spert
 ```
 
-Each model has a configuration file under the 'configs' directory. You can set gpu_id, adjust hyper-parameters or change training configuration to run a different experiment. To reproduce the results in the paper using the FinBERT model, replace the `model_path` and `tokenizer_path` fields with `ProsusAI/finbert` in the SpERT configuration file. 
+Each model has a configuration file under the 'configs' directory.
+
+OR 
+
+To run the results in jupyter notebook you can clone the repo and run the commands present in the jupyter notebook cells.
+
+## Results 
+
+The results are logged in the file created under the log directory. Once training for all iterations is finished, the results are stored in the mean_std_f1.csv file.
+
+
 ## Citation
 1. 
 
