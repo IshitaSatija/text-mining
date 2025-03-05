@@ -45,6 +45,13 @@ Similar to the above example, each instance in the dataset contains four fields 
 
 To set up your Python environment to run the baselines, follow these steps:
 
+1. Goto https://livemanchesterac-my.sharepoint.com/:f:/g/personal/ishita_satija_postgrad_manchester_ac_uk/EjqzT5l5_bVMgaTsIHyiRq8BZcMw17goZWJjLILRHbrQ7w?e=rUvizT 
+2. Download the code + datasets + configurations. 
+3. Open the Spert_training.ipynb file. 
+4. Run the code in the cells.
+
+##OR
+
 1. Clone the repository:
 ```bash
 git clone https://github.com/IshitaSatija/text-mining
@@ -59,11 +66,12 @@ cd FIRE
 python main.py --mode train --model spert
 ```
 
+## OR 
+
+Run the code in the Spert_training.ipynb file which already has all the above commands present.
+
 Each model has a configuration file under the 'configs' directory.
 
-OR 
-
-To run the results in jupyter notebook you can clone the repo and run the commands present in the jupyter notebook cells.
 
 ## Results 
 
