@@ -64,7 +64,7 @@ class ModelWrapper(ABC):
                           self.exp_cfgs.log_path)
                 self.re_logger.summarize_one_iteration(it, data_label='test')
                 # clean
-                os.remove(os.path.join(trained_model_path, 'pytorch_model.bin'))
+                #os.remove(os.path.join(trained_model_path, 'pytorch_model.bin'))
                 
             self.re_logger.summarize_all_iterations()
 

@@ -2,7 +2,7 @@
     "n_random_iter": 1,
     "seed": 1234,
     "device_id": 0,
-    "epochs": 5,
+    "epochs": 1,
     "rel_filter_threshold": 0.4,
     "max_pairs": 1500,
     "max_span_size": 12,
