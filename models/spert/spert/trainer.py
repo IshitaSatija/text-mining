@@ -128,6 +128,7 @@ class BaseTrainer:
             model.module.save_pretrained(dir_path)
         else:
             model.save_pretrained(dir_path)
+
         torch.save(model.state_dict(), os.path.join(dir_path, 'pytorch_model.bin'))
         self._logger.info(f"Manually saved model weights to {os.path.join(dir_path, 'pytorch_model.bin')}")
 
