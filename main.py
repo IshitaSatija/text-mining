@@ -7,16 +7,8 @@ import argparse
 from mapping import map_dataset
 
 def get_model_wrapper(exp_cfgs):
-    if exp_cfgs.model == 'spert':
-        from models.spert.spert_wrapper import SpertWrapper
-        model_wrapper = SpertWrapper(exp_cfgs)
-    elif exp_cfgs.model == 'pl_marker':
-        from models.pl_marker.pl_marker_wrapper import PLMarkerWrapper
-        model_wrapper = PLMarkerWrapper(exp_cfgs)
-    elif exp_cfgs.model == 'rebel':
-        from models.rebel.rebel_wrapper import RebelWrapper
-        model_wrapper = RebelWrapper(exp_cfgs)
-    
+    from models.spert.spert_wrapper import SpertWrapper
+    model_wrapper = SpertWrapper(exp_cfgs)
     return model_wrapper
 
 def execute_main(exp_cfgs):

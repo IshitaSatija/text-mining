@@ -42,15 +42,15 @@ class SpertWrapper(ModelWrapper):
         call_spert('eval',config_path)
 
     def predict(self, model_path, dataset_path, output_path):
-        
+        print(self.exp_cfgs,"test")
         config_path = os.path.join(self.exp_cfgs.log_path,'spert_config.conf')
         with open(config_path,'w') as f:
-            for key,val in self.exp_cfgs.model_args.configs.items():
-                if key in PREDICT_ARGS_LIST:
-                    f.write(str(key) + ' = ' + str(val) + '\n')
+            # for key,val in self.exp_cfgs.model_args.configs.items():
+                # if key in PREDICT_ARGS_LIST:
+                #     f.write(str(key) + ' = ' + str(val) + '\n')
             f.write('model_path = ' + model_path + '\n')
             f.write('dataset_path = ' + dataset_path + '\n')
-            f.write('types_path = ' + self.exp_cfgs.model_args.types_path + '\n')
+            f.write('types_path = ' + self.exp_cfgs.types_path + '\n')
             f.write('predictions_path = ' + output_path  + '\n')
 
         call_spert('predict',config_path)

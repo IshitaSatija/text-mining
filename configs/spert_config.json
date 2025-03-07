@@ -23,5 +23,6 @@
     "neg_entity_count": 200,
     "size_embedding": 25,
     "prop_drop": 0.3,
-    "save_optimizer": false
+    "save_optimizer": false,
+    "dataset_path": "fire/data/fire_test.json"
 }
